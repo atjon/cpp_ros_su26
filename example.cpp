@@ -7,6 +7,6 @@ int main() {
 
     //The << is an operator used to pass the string into the object
     //as as parameter.
-    std::cout << "TR is the greatest thing to ever exist";
+    std::cout << "TR is the greatest thing to ever exist\n";
     return 0;
 }
