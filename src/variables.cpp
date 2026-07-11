@@ -12,5 +12,10 @@ int main() {
     std::cout << "a is ";
     std::cout << a;
     std::cout << "\n";
- 
+    std::cout << "\n";
+    std::cout << "\n";
+    int y { 6 }; //"direct list initialization"Z
+    int e {}; //same as int e;
+
+
 }
