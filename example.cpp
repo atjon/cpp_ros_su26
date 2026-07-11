@@ -1,9 +1,11 @@
 #include <iostream>
+//#include is the import of C++. It brings in the iostream library
+
 
 int main() {
     //The :: is used b/c of namespaces. To make sure the namespaces.
     //To make sure that the cout we are talking about is from the 
-    //standard (std) library, not another third party library.
+    //iostream  library, not another third party library.
 
     //The << is an operator used to pass the string into the object
     //as as parameter.
