@@ -12,6 +12,7 @@ void doA() {
     std::cout << "Starting doA()\n";
     std::cout << doB();
     std::cout << "Ending doA()\n";
+    std::cout << "";
 }
 
 int returnSix() {
