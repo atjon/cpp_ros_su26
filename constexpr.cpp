@@ -3,11 +3,14 @@
 
 int main() {
 
+    // the point of constexpr and constexpr ifs is giving programmers the ability
+    // to move the computation done during runtime to compile time.
 
     const int t = 20; // clearly a constant variable & will NEVER change
                       // ideally, if compiler could, it should want to optimize
                       // this piece of code during compile time, instead of it 
                       // taking valuable runtime 
+                      // just const is the same as a macro (#DEFINE)
 
     constexpr int x = 5; // constexpr answers this need. A constexpr variable 
                          // must always be defined w/ a constant expression
