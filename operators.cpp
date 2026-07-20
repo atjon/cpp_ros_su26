@@ -17,5 +17,20 @@ int main() {
     "the expression as: (a + b) * (c + d)\n" << "x=" << x << "\n";
 
 
+    //It's best practice to avoid the comma operator, except within for loops
+    std::cout << "a was: " << a << "\nLet's increment with some comma operators.\n" << 
+    (a++, b++) << "\nNow a= " << a << "\nNow b= " 
+    << b << "\n"; // increment a and b, then 
+                  // returns the result of the 
+                  // right operand
+
+    int i, j;
+    for (i=0; i<5; i++, j++) { //comma operator is okay for multiple 
+                               //increment/decrement operations within one for loop.
+        for (j=0; j<5; j++) {
+            d++;
+        }
+    }
+                  
     return 0;
 }
