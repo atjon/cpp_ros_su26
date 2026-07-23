@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 //This file is used in company with linkageCopy.cpp
 //to simulate how internal linkage works.
@@ -30,12 +31,23 @@ static int add(int x, int y) {
     return x + y;
 }
 
-void sayHi(); //forward declaration sources sayHi() 
+std::string sayHi(); //forward declaration sources sayHi() 
               //from linkageCopy.cpp's definition.
+
+inline double pi() {
+    //note that inline.cpp also has this function defintion
+    //across multiple translation units, inline functions 
+    //must share the exact same function definition.
+    return 3.14159;
+}
 
 int main() {
     std::cout << g_ << " " << h_ << " " << k_ << "\n";
     std::cout << add(3,5) << "\n";
-    sayHi();
+    std::cout << "sayHi(), which is forward declared in this file, " << 
+    "utilizes external linkage to retrieve the function declaration in linkageCopy.cpp." << 
+    " sayHi() says: " << sayHi();
+    std::cout << "pi(), which is defined with inline keyword " <<
+    "in both linkage.cpp and inline.cpp, is allowed. pi() = " << pi() << "\n";
 
 }
