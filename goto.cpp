@@ -13,7 +13,7 @@ void skipping(bool skip) {
     std::cout << "Didn't skip lmao\n";
     end: // since the spot we jump to is within the same function,
          // code says we r in the same scope and we're good.
-    
+    return; 
 }
 
 
