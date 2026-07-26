@@ -27,9 +27,10 @@ inline double pi() {
 // }
 
 namespace constants {
-    constexpr double pi {3.14159}; // one way to have globally defined constants
-                                   // is to have this defined in a namespace. 
-                                   // constexpr helps w/ saving runtime 
-    inline constexpr double myGravity {9.6}; // inline helps declare this constexpr as 
-                                             // externally linkable
+    // extern (not constexpr) forces a real, always-emitted symbol with external
+    // linkage, matching the `extern const double pi;` declaration in constants.h.
+    // constexpr/inline variables only get emitted in a TU that actually odr-uses
+    // them, and this TU never does, so the linker had nothing to find.
+    extern const double pi {3.14159};
+    extern const double myGravity {9.6};
 }
