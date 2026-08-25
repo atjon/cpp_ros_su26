@@ -76,6 +76,18 @@ add_executable(15.4-15.5_destructors_and_class_templates_with_member_functions 1
 add_executable(15.6-15.7_static_members 15.6-15.7_static_members.cpp)
 add_executable(15.8-15.10_friends_and_ref_qualifiers 15.8-15.10_friends_and_ref_qualifiers.cpp)
 
+# Chapter 16 - Dynamic arrays: std::vector
+add_executable(16.1-16.3_intro_to_containers_and_vectors 16.1-16.3_intro_to_containers_and_vectors.cpp)
+add_executable(16.4-16.5_passing_and_returning_vectors 16.4-16.5_passing_and_returning_vectors.cpp)
+add_executable(16.6-16.8_arrays_loops_and_range_based_for 16.6-16.8_arrays_loops_and_range_based_for.cpp)
+add_executable(16.9_array_indexing_and_length_using_enumerators 16.9_array_indexing_and_length_using_enumerators.cpp)
+add_executable(16.10-16.12_vector_resizing_capacity_and_stack_behavior 16.10-16.12_vector_resizing_capacity_and_stack_behavior.cpp)
+
+# Chapter 17 - Fixed-size arrays (17.7 onward; 17.1-17.6 cover std::array)
+add_executable(17.7-17.9_c_style_arrays_decay_and_pointer_arithmetic 17.7-17.9_c_style_arrays_decay_and_pointer_arithmetic.cpp)
+add_executable(17.10-17.11_c_style_strings_and_symbolic_constants 17.10-17.11_c_style_strings_and_symbolic_constants.cpp)
+add_executable(17.12-17.13_multidimensional_arrays 17.12-17.13_multidimensional_arrays.cpp)
+
 # Chapter 20 - Functions
 add_executable(20.1-20.2_function_pointers_and_the_stack_and_heap 20.1-20.2_function_pointers_and_the_stack_and_heap.cpp)
 add_executable(20.3_recursion 20.3_recursion.cpp)
